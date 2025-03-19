@@ -352,7 +352,7 @@ class GoogleWorkspaceAlertsWodle:
                 self.logger.error(f"Socket path does not exist: {self.socket_path}")
                 return False
 
-            # Flatten and send
+            # Flatten before sending as it can contain multiple layers of nested JSON object, which Wazuh doesn't seem to support
             flattened_event = self._flatten_json(event)
             message = f"1:{WODLE_NAME}:{json.dumps(flattened_event)}"
 
