@@ -124,12 +124,13 @@ class GoogleWorkspaceAlertsWodle:
 
             fetch_end_time = datetime.datetime.now(datetime.timezone.utc)
 
+            # Resume from last run or fetch alerts from the last 24 hours if no state found
             if last_processed_time:
                 fetch_start_time = last_processed_time
                 self.logger.info(f"Resuming from last run at {fetch_start_time.isoformat()}")
             else:
                 fetch_start_time = fetch_end_time - datetime.timedelta(days=1)
-                self.logger.info(f"No previous state found. Fetching alerts from the last 24 hours")
+                self.logger.info(f"No previous state found - fetching alerts from the last 24 hours")
 
             # Get the Google API service
             credentials = authenticate(self.google_api_config, self.logger)
@@ -230,6 +231,7 @@ class GoogleWorkspaceAlertsWodle:
             # Send to Wazuh
             self.logger.info(f"Sending alert to Wazuh: {alert_id}")
             return self._send_event(workspace_alert)
+
         except Exception as e:
             self.logger.error(f"Error processing alert {alert.get('alertId', '')}: {str(e)}")
             return False
