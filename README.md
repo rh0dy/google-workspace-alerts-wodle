@@ -14,8 +14,7 @@ This wodle allows security teams to monitor security alerts raised in Google Wor
 - Wazuh server (version 4.x or higher)
 - Python 3.10+
 - Google Workspace with Alert Center
-- Google Cloud Platform project with the Admin SDK API enabled (see below)
-- Google service account with appropriate permissions
+- Google Cloud Platform project with the Admin SDK API enabled and a service account (see below)
 
 ## Google API Authentication
 
