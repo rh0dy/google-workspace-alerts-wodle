@@ -23,7 +23,7 @@ This wodle allows security teams to monitor security alerts raised in Google Wor
 1. Create a [Google Cloud project](https://developers.google.com/workspace/guides/create-project)
 2. Switch scope to the project you just created
 3. Enable the [Google Workspace Alert Center API](https://developers.google.com/workspace/guides/enable-apis)
-4. Create a [service account](https://developers.google.com/workspace/guides/create-credentials#service-account) with "domain-wide delegation" (this authorises access a Google Workspace's data on behalf of user in the Google Workspace domain, ideally through a non-human "service account" user)
+4. Create a [service account](https://developers.google.com/workspace/guides/create-credentials#service-account) with "domain-wide delegation" (this authorises access to your Google Workspace's data on behalf of user in the Google Workspace domain, ideally through a non-human "service account" user)
 5. In the domain-wide delegation [settings](https://developers.google.com/identity/protocols/oauth2/service-account#delegatingauthority), add the following scope `https://www.googleapis.com/auth/apps.alerts`
 6. Retrieve and save the service account's [credentials](https://developers.google.com/workspace/guides/create-credentials#create_credentials_for_a_service_account)
 
