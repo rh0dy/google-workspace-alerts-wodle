@@ -8,7 +8,6 @@ This wodle allows security teams to monitor security alerts raised in Google Wor
 - Processes [over 40](https://github.com/rh0dy/google-workspace-alerts-wodle/blob/main/config.py#L25-L69) different [alert types](https://developers.google.com/admin-sdk/alertcenter/reference/alert-types) from Google Workspace, including phishing reports, leaked passwords, suspicious logins, government attack warnings, devices compromised, data loss prevention,s primary admin changes, super admin password resets, SSO profile changes, drive settings changes, new users added, account suspension warnings, and many more
 - Maintains state between runs to avoid duplicate alerts
 - Flattens complex alert structures for Wazuh compatibility
-- Configurable logging and error handling
 
 ## Requirements
 
