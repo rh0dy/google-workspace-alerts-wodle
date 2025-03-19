@@ -21,6 +21,7 @@ GOOGLE_API_AUTH_PROVIDER_X509_CERT_URL = "https://www.googleapis.com/oauth2/v1/c
 GOOGLE_API_SCOPES = ["https://www.googleapis.com/auth/apps.alerts"]
 
 # Alert types from Google Workspace
+# https://developers.google.com/admin-sdk/alertcenter/reference/alert-typess
 GOOGLE_ALERT_TYPES = [
     "Access Approvals request",
     "Account suspension warning",
