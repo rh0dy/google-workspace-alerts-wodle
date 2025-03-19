@@ -18,7 +18,7 @@ This wodle allows security teams to monitor security alerts raised in Google Wor
 
 ## Google API Authentication
 
-**Important**: This wodle requires Google API credentials to communicate with Google Workspace through a delegated administrator account. It's a bit fiddly, the [Google dev docs](https://developers.google.com/workspace/guides/get-started) contains detailed information on how to set this up, but the abridged version is as follows:
+**Important**: This wodle requires Google API credentials to communicate with Google Workspace through a delegated administrator account. It's a bit fiddly to set up as there are a few layers to it, the [Google dev docs](https://developers.google.com/workspace/guides/get-started) have detailed instructions on how to set this up, but the abridged version is as follows:
 
 1. Create a [Google Cloud project](https://developers.google.com/workspace/guides/create-project)
 2. Switch scope to the project you just created
