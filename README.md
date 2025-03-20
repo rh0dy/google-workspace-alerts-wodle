@@ -1,5 +1,9 @@
 # Google Workspace Alerts Wodle for Wazuh
 
+<img width="1784" alt="image" src="https://github.com/user-attachments/assets/37990a42-ac2a-4af3-afde-8dbeac29ac47" />
+
+![image](https://github.com/user-attachments/assets/12014ffb-8d91-49c9-ae36-9349b5b77f3f)
+
 ## Overview
 
 This wodle allows security teams to monitor security alerts raised in Google Workspace environments through their existing Wazuh deployment.
