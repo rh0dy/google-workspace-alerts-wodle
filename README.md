@@ -98,7 +98,7 @@ You can run the wodle manually for testing:
 
 ## Configuration
 
-This wodle requires Google API credentials to be set to allow communication with Google Workspace through a delegated administrator account. These the majority of these values are found in the service account's [credentials](https://developers.google.com/workspace/guides/create-credentials#create_credentials_for_a_service_account) and are set in `/var/ossec/wodles/google_workspace_alerts/config.json` file.
+This wodle requires Google API credentials to be set to allow communication with Google Workspace through a delegated administrator account. The the majority of these values are found in the service account's [credentials](https://developers.google.com/workspace/guides/create-credentials#create_credentials_for_a_service_account) and are set in `/var/ossec/wodles/google_workspace_alerts/config.json` file.
 
 | Setting | Description | Required | Example |
 |---------|-------------|----------|---------|
